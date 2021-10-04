@@ -227,14 +227,14 @@ void UCANS32K146_PIN_MUX(void)
     PORTA->PORTA_PCR12_b.MUX = PORTA_PCR12_MUX_011; /* CAN1_RX at PORT A pin 12 */
     PORTA->PORTA_PCR13_b.MUX = PORTA_PCR13_MUX_011; /* CAN1_TX at PORT A pin 13 */
 
-    /* Set to LOW the standby (STB) pin in both transceivers of the UCANS32K146 node board */
+    /* Set to HIGH the standby (STB) pin in both transceivers of the UCANS32K1SIC node board */
     PORTE->PORTE_PCR11_b.MUX = PORTE_PCR11_MUX_001; /* MUX to GPIO */
     PTE->GPIOE_PDDR |= 1 << 11; 				  /* Set direction as output */
-    PTE->GPIOE_PCOR |= 1 << 11; 				  /* Set the pin LOW */
+    PTE->GPIOE_PSOR |= 1 << 11; 				  /* Set the pin LOW */
 
     PORTE->PORTE_PCR10_b.MUX = PORTE_PCR10_MUX_001; /* Same as above */
     PTE->GPIOE_PDDR |= 1 << 10;
-    PTE->GPIOE_PCOR |= 1 << 10;
+    PTE->GPIOE_PSOR |= 1 << 10;
 }
 
 void greenLED_init(void)
