@@ -6,5 +6,5 @@ Importable projects to S32 Design Studio, TX and RX examples are meant to be fla
  ![alt text](https://github.com/noxuz/libuavcan_demo/blob/master/board_connection.jpg?raw=true)
 
  ![alt text](https://i.ibb.co/ncFtM2T/NXP-SCSW-SOLID-Black-Horizontal.png) 
- ### Copyright© 2021, NXP. All rights reserved.
+ ### Copyright© 2021, NXP.
 
